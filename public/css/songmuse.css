@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-family: 'Exo 2', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 42px;
   background: #360;
   color: #fff;
@@ -9,4 +9,16 @@ body {
 
 img {
   border: 4px solid #fff;
+}
+
+a {
+  color: #fc0;
+  font-weight: bold;
+}
+
+dd {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-left: 0;
 }

@@ -10,18 +10,26 @@ html
 
     img src="http://rocknycliveandrecorded.com/wp-content/uploads/2016/03/Grohl2.jpg" height="358" width="552"
 
-    p I want a
-    h2 #{@genre} song
-    p in the
-    h2 key of #{@key}!
+    dl
+      dt Genre
+      dd #{@genre}
 
-    p It should have a 
-    h2 #{@time_signature} feel
-    p at around
-    h2 #{@tempo} BPM! 
+      dt Key
+      dd #{@key} #{@scale}
 
-    P The arrangement should be something like
-    h2 #{@arrangement}
+      dt Time Signature
+      dd #{@time_signature}
 
-    P For the verse, use the chord progression
-    H2 #{@verse_chords}
+      dt Tempo
+      dd #{@tempo} BPM
+
+      dt Arrangement
+      dd #{@arrangement}
+
+      dt Verse Chord Progression
+      dd #{@verse_chords}
+
+      dt Chorus Chord Progression
+      dd #{@chorus_chords}
+
+    a href="/" I don't think I can do it! Give me another one?
