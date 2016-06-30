@@ -7,5 +7,6 @@ get '/' do
   @time_signature = ["4/4", "6/4", "6/8"].sample
   @tempo = (60..150).to_a.sample
   @arrangement = "Verse Chorus Verse Chorus Bridge Verse Chorus"
+  @verse_chords = ["I vi IV V", "I vi ii V", "I ii IV V"].sample
   slim :index
 end
