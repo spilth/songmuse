@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 2em;
+  margin: 42px;
+  background: #360;
+  color: #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+img {
+  border: 4px solid #fff;
+}
