@@ -6,12 +6,17 @@ html
     link rel="stylesheet" href="css/songmuse.css"
 
   body.prompts
-    h1 #{@prompt["title"]}
+    h1 #{@prompt['title']}
 
-    p #{@prompt["description"]}
-
-    p
-      a href="/prompt" Give me another one?
+    p #{@prompt['description']}
 
     p
+      ' Source:
+      a href=@prompt['source_url']
+        = @prompt['source_name']
+
+    p
+      a href="/prompt" Give me another one!
+
+    p.source
       a href="https://github.com/spilth/songmuse" https://github.com/spilth/songmuse
