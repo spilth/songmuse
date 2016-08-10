@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Song Muse - Song Writing Prompt
+    link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'
+    link rel="stylesheet" href="css/songmuse.css"
+
+  body.prompts
+    h1 #{@prompt["title"]}
+
+    p #{@prompt["description"]}
+
+    p
+      a href="/prompt" Give me another one?
+
+    p
+      a href="https://github.com/spilth/songmuse" https://github.com/spilth/songmuse

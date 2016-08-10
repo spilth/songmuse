@@ -7,13 +7,16 @@ body {
   color: #fff;
 }
 
+body.prompts {
+  text-align: left;
+}
+
 img {
   border: 4px solid #fff;
 }
 
 a {
   color: #fc0;
-  font-weight: bold;
 }
 
 dd {

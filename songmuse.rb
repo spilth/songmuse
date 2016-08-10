@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'yaml'
 
 get '/' do
   @key = %w(C D E F G A B).sample
@@ -14,4 +15,12 @@ get '/' do
   @chorus_chords = chords.sample
 
   slim :index
+end
+
+get '/prompt' do
+  prompts = YAML::load_file('data/prompts.yml')
+
+  @prompt = prompts.sample
+
+  slim :prompt
 end
