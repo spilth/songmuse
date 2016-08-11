@@ -1,31 +1,22 @@
 body {
-  text-align: center;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 1.5em;
-  margin: 42px;
-  background: #360;
-  color: #fff;
-}
-
-body.prompts {
-  text-align: left;
-}
-
-img {
-  border: 4px solid #fff;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5em;
+    margin: 42px;
+    background: #729f98;
+    color: #f0eceb;
 }
 
 a {
-  color: #fc0;
+    color: #f0eceb;
+}
+
+dt {
+    border-bottom: 3px solid #f0eceb;
+    font-weight: bold;
 }
 
 dd {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  margin-left: 0;
-}
-
-p.source {
-  font-size: 0.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0.7em;
+    margin-left: 0;
 }

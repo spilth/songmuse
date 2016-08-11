@@ -3,18 +3,22 @@ require 'sinatra/reloader' if development?
 require 'yaml'
 
 get '/' do
-  @key = %w(C D E F G A B).sample
-  @scale = %w(Major Dorian Phrygian Lydian Mixolydian Minor Locrian).sample
-  @genre = %w(Alternative Blues Classical Country Dance Electronic Hiphop Industrial Jazz Metal Pop R&B Rock).sample
-  @time_signature = ["4/4", "6/4", "6/8"].sample
+  slim :index
+end
+
+get '/challenge' do
+  @key = YAML::load_file('data/keys.yml').sample
+  @scale = YAML::load_file('data/scales.yml').sample
+  @genre = YAML::load_file('data/genres.yml').sample
+  @time_signature = YAML::load_file('data/time_signatures.yml').sample
   @tempo = (60..150).to_a.sample
-  @arrangement = "Verse Chorus Verse Chorus Bridge Verse Chorus"
+  @arrangement = YAML::load_file('data/arrangements.yml').sample
 
   chords = ["I vi IV V", "I vi ii V", "I ii IV V"]
   @verse_chords = chords.sample
   @chorus_chords = chords.sample
 
-  slim :index
+  slim :challenge
 end
 
 get '/prompt' do

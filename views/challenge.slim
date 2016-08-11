@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Challenge - Song Muse
+    link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'
+    link rel="stylesheet" href="css/songmuse.css"
+
+  body
+    h1 Song Challenge
+
+    dl
+      dt Genre
+      dd #{@genre}
+
+      dt Key
+      dd #{@key} #{@scale}
+
+      dt Time Signature
+      dd #{@time_signature}
+
+      dt Tempo
+      dd #{@tempo} BPM
+
+      dt Arrangement
+      dd #{@arrangement}
+
+      dt Verse Chord Progression
+      dd #{@verse_chords}
+
+      dt Chorus Chord Progression
+      dd #{@chorus_chords}
