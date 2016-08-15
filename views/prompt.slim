@@ -1,20 +1,13 @@
-doctype html
-html
-  head
-    title Song Writing Prompt - Song Muse
-    link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'
-    link rel="stylesheet" href="css/songmuse.css"
+body.prompt
+  h1
+    ' Songwriting Prompt /
+    a href="/" Song Muse
 
-  body.prompt
-    h1
-      ' Songwriting Prompt /
-      a href="/" Song Muse
+  dl
+    dt #{@prompt['title']}
+    dd #{@prompt['description']}
 
-    dl
-      dt #{@prompt['title']}
-      dd #{@prompt['description']}
-
-      dt Source
-      dd
-        a href=@prompt['source_url']
-          = @prompt['source_name']
+    dt Source
+    dd
+      a href=@prompt['source_url']
+        = @prompt['source_name']

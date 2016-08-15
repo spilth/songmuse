@@ -1,24 +1,17 @@
-doctype html
-html
-  head
-    title Resources - Song Muse
-    link href='https://fonts.googleapis.com/css?family=Exo+2:400,900' rel='stylesheet' type='text/css'
-    link rel="stylesheet" href="css/songmuse.css"
-
-  body
-    h1
-      ' Resources /
-      a href="/" Song Muse
+body
+  h1
+    ' Resources /
+    a href="/" Song Muse
 
 
-    - @resources.each do |category|
-      h2 = category['name']
+  - @resources.each do |category|
+    h2 = category['name']
 
-      dl.resources
-        - category['sites'].each do |resource|
-          dt
-            a href=resource['url']
-              = resource['name']
-          dd
-            span
-              = resource['description']
+    dl.resources
+      - category['sites'].each do |resource|
+        dt
+          a href=resource['url']
+            = resource['name']
+        dd
+          span
+            = resource['description']
