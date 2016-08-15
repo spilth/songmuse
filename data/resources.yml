@@ -1,0 +1,29 @@
+-
+  name: Hiring
+  sites:
+    -
+      name: SoundBetter
+      url: https://soundbetter.com/
+      description: Top Recording Studios, Mixing & Mastering Engineers, Producers and Session Musicians for hire
+-
+  name: Distribution
+  sites:
+    -
+      name: bandcamp
+      url: https://bandcamp.com/
+      description: Bandcamp makes it easy for fans to directly connect with and support the artists they love.
+-
+  name: Collaboration
+  sites:
+    -
+      name: HITRECORD
+      url: https://hitrecord.org/
+      description: HITRECORD is an open, community-sourced production company.
+    -
+      name: Kompoz
+      url: http://www.kompoz.com/
+      description: Collaborate with musicians across the world or across the street.
+    -
+      name: Splice
+      url: https://splice.com/
+      description: Splice is the cloud platform for music creation, collaboration, and sharing.

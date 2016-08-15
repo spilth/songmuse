@@ -28,3 +28,9 @@ get '/prompt' do
 
   slim :prompt
 end
+
+get '/resources' do
+  @resources = YAML::load_file('data/resources.yml')
+
+  slim :resources
+end
