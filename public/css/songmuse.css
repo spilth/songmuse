@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: #ccc;
+    color: #aaa;
 }
 
 dt {
@@ -29,15 +29,20 @@ h1 {
 }
 
 h2 {
-    text-align: center;
-    font-size: 8vw;
+    text-align: left;
+    font-size: 5vh;
+    margin-bottom: 0;
+}
+
+dl.resources {
+    margin-top: 0.2em;
 }
 
 dl.resources dt {
-    font-size: 5vh;
+    font-size: 4vh;
     border: none;
 }
 
 dl.resources dd {
-    font-size: 4vh;
+    font-size: 3vh;
 }
