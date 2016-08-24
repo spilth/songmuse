@@ -1,0 +1,60 @@
+body
+  h1
+    ' Object Writing /
+    a href="/" Song Muse
+
+  p Write for 10 minutes about
+
+  h2 #{@word}
+
+  button onclick="startTimer();" Start Timer
+  button onclick="resetTimer();" Reset Timer
+
+  #timer 0:00
+
+  p Use Your Senses:
+
+  ul
+    li Sight
+    li Hearing
+    li Smell
+    li Taste
+    li Touch
+    li Organic
+    li Kinesthetic
+
+javascript:
+  var timerId;
+  var display = document.getElementById("timer");
+  var countdown = 10 * 60;
+
+  updateDisplay(countdown);
+
+  function updateDisplay(timer) {
+    var minutes = parseInt(timer / 60, 10);
+    var seconds = parseInt(timer % 60, 10);
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    display.textContent = minutes + ":" + seconds;
+  }
+
+  function resetTimer() {
+    updateDisplay(countdown);
+
+    window.clearInterval(timerId);
+  }
+
+  function startTimer() {
+    var timer = countdown;
+
+    timerId = setInterval(function () {
+      updateDisplay(timer);
+
+      if (--timer < 0) {
+        resetTimer();
+        alert("All done!")
+      }
+    }, 1000);
+  }

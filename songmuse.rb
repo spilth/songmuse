@@ -29,6 +29,13 @@ get '/prompt' do
   slim :prompt
 end
 
+get '/object-writing' do
+  words = File.readlines 'data/object-writing.txt'
+  @word = words.sample
+
+  slim :object_writing
+end
+
 get '/resources' do
   @resources = YAML::load_file('data/resources.yml')
 

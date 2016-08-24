@@ -1,4 +1,11 @@
 -
+  name: Inspiration
+  sites:
+    -
+      name: ObjectWriting.com
+      url: http://objectwriting.com
+      description: Object Writing, Prose & Poetry Forum
+-
   name: Hiring
   sites:
     -
