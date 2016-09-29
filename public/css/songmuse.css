@@ -1,48 +1,46 @@
 body {
     font-family: 'Exo', sans-serif;
     font-size: 1.5em;
-    margin: 20px;
-    background: #000;
-    color: #fff;
+    margin: 40px;
+    background: #F7F2F0;
+    color: #12186B;
 }
 
 a {
-    color: #aaa;
+    color: #B03912;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+dl {
+    margin-top: 0.2em;
 }
 
 dt {
-    border-bottom: 3px solid #fff;
     font-weight: bold;
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 dd {
     margin-top: 0.1em;
     margin-bottom: 0.7em;
     margin-left: 0;
-    font-size: 5vh;
+    font-size: 2vh;
 }
 
 h1 {
-    text-align: right;
-    font-size: 3vh;
+    font-size: 4vh;
 }
 
 h2 {
-    text-align: left;
     font-size: 5vh;
     margin-bottom: 0;
 }
 
-dl.resources {
-    margin-top: 0.2em;
-}
-
-dl.resources dt {
-    font-size: 4vh;
-    border: none;
-}
-
-dl.resources dd {
+h3 {
     font-size: 3vh;
+    margin-bottom: 0;
 }

@@ -1,13 +1,10 @@
 body.prompt
-  h1
-    ' Songwriting Prompt /
-    a href="/" Song Muse
+  a href="/" Song Muse
 
-  dl
-    dt #{@prompt['title']}
-    dd #{@prompt['description']}
+  h1 Songwriting Prompt
 
-    dt Source
-    dd
-      a href=@prompt['source_url']
-        = @prompt['source_name']
+  h2 #{@prompt['title']}
+  p #{@prompt['description']}
+
+  a href=@prompt['source_url']
+    = @prompt['source_name']

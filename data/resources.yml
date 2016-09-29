@@ -23,6 +23,10 @@
   name: Collaboration
   sites:
     -
+      name: Allihoopa
+      url: https://allihoopa.com
+      description: Allihoopa brings all of us, everyone, together for a free and open exchange of music pieces, ideas and people, all united in “doing music” just for the sake of it.
+    -
       name: HITRECORD
       url: https://hitrecord.org/
       description: HITRECORD is an open, community-sourced production company.

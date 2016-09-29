@@ -41,3 +41,9 @@ get '/resources' do
 
   slim :resources
 end
+
+get '/oblique-strategies' do
+  @strategy = YAML::load_file('data/oblique-strategies.yml').sample
+
+  slim :oblique_strategies
+end
