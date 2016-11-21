@@ -6,6 +6,43 @@
       url: http://objectwriting.com
       description: Object Writing, Prose & Poetry Forum
 -
+  name: Learning
+  sites:
+    -
+      name: ADSR Tutorials
+      url: https://www.adsrsounds.com/tutorials/
+      description:
+    -
+      name: macProVideo
+      url: http://macprovideo.com/
+      description: macProVideo.com is an online education community featuring Tutorial-Videos & Training for popular Audio & Video Applications.
+    -
+      name: Produce Like A Pro
+      url: https://www.producelikeapro.com/
+      description: An online community featuring tons of great recording tips, tutorial videos, multitrack sessions, free downloads, and much more!
+    -
+      name: pureMix.net
+      url: https://www.puremix.net/
+      description: The largest community of producers and engineers dedicated to sharing mixing, mastering, recording and production knowledge.
+    -
+      name: The Recording Revolution
+      url: http://therecordingrevolution.com
+      description:
+-
+  name: Content
+  sites:
+    -
+      name: ADSR Sounds
+      url: https://www.adsrsounds.com
+      description:
+-
+  name: Services
+  sites:
+    -
+      name: LANDR
+      url: https://www.landr.com/
+      description: Mastering as a Service
+-
   name: Hiring
   sites:
     -
@@ -19,6 +56,10 @@
       name: bandcamp
       url: https://bandcamp.com/
       description: Bandcamp makes it easy for fans to directly connect with and support the artists they love.
+    -
+      name: Soundcloud
+      url: https://soundcloud.com/
+      description: SoundCloud is the world’s leading social sound platform where anyone can create sounds and share them everywhere.
 -
   name: Collaboration
   sites:
@@ -38,3 +79,8 @@
       name: Splice
       url: https://splice.com/
       description: Splice is the cloud platform for music creation, collaboration, and sharing.
+    -
+      name: Treble
+      url: http://treble.fm/
+      description: Treble is a digital platform designed to help musicians build their networks within musician communities, find the right collaborators, and discover professional opportunities.
+
