@@ -1,4 +1,11 @@
 -
+  name: Source Code
+  sites:
+    -
+      name: Songmuse Source Code
+      url: https://github.com/spilth/songmuse
+      description: Sinatra project for Songmuse
+-
   name: Inspiration
   sites:
     -
