@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import words from "./words";
+import words from "./data/words";
 
 export default class ObjectWriting extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ export default class ObjectWriting extends Component {
         </div>
 
         <h2>What is Object Writing?</h2>
-        
+
         <p>Use your senses:</p>
 
         <ul>

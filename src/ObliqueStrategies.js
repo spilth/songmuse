@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import strategies from "./strategies";
+import strategies from "./data/strategies";
 
 export default class ObliqueStrategies extends Component {
   constructor(props) {
