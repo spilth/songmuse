@@ -87,7 +87,7 @@ export default class WordFinder extends Component {
   findWords(event) {
     axios
       .get(
-        `http://words.bighugelabs.com/api/2/b239421c3013579d71da631af6ece495/${this.state.word}/json`
+        `https://words.bighugelabs.com/api/2/b239421c3013579d71da631af6ece495/${this.state.word}/json`
       )
       .then((response) => {
         let nouns = [];
