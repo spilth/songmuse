@@ -3,13 +3,21 @@ import * as PropTypes from "prop-types";
 
 export function Results(props) {
   if (props.entries.length > 0) {
-    return <div>
-      <h3 data-toggle="tooltip" data-placement="top" title={props.description}>{props.title}</h3>
+    return (
+      <div>
+        <h3
+          data-toggle="tooltip"
+          data-placement="top"
+          title={props.description}
+        >
+          {props.title}
+        </h3>
 
-      <p>{props.entries.join(", ")}</p>
-    </div>;
+        <p>{props.entries.join(", ")}</p>
+      </div>
+    );
   } else {
-    return '';
+    return "";
   }
 }
 
@@ -20,6 +28,6 @@ Results.propTypes = {
 };
 
 Results.defaultProps = {
-  description: '',
+  description: "",
   entries: [],
 };

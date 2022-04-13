@@ -12,7 +12,7 @@ export default class WordFinder extends Component {
       verbs: [],
       adverbs: [],
       adjectives: [],
-      rhymes: []
+      rhymes: [],
     };
   }
 
@@ -31,14 +31,14 @@ export default class WordFinder extends Component {
                 className="form-control mr-2"
                 placeholder="Enter word"
                 value={this.state.word}
-                onChange={e => this.wordChanged(e)}
+                onChange={(e) => this.wordChanged(e)}
               />
             </div>
 
             <button
               type="submit"
               className="btn btn-primary mr-2"
-              onClick={e => this.findWords(e)}
+              onClick={(e) => this.findWords(e)}
             >
               Find Other Words
             </button>
@@ -87,11 +87,9 @@ export default class WordFinder extends Component {
   findWords(event) {
     axios
       .get(
-        `http://words.bighugelabs.com/api/2/b239421c3013579d71da631af6ece495/${
-          this.state.word
-        }/json`
+        `https://words.bighugelabs.com/api/2/b239421c3013579d71da631af6ece495/${this.state.word}/json`
       )
-      .then(response => {
+      .then((response) => {
         let nouns = [];
         let verbs = [];
         let adverbs = [];
@@ -117,16 +115,16 @@ export default class WordFinder extends Component {
           nouns,
           verbs,
           adverbs,
-          adjectives
+          adjectives,
         });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
         this.setState({
           nouns: [],
           verbs: [],
           adverbs: [],
-          adjectives: []
+          adjectives: [],
         });
       })
       .then(() => {
@@ -135,16 +133,16 @@ export default class WordFinder extends Component {
 
     axios
       .get(`https://api.datamuse.com/words?rel_rhy=${this.state.word}`)
-      .then(response => {
+      .then((response) => {
         let rhymes = [];
 
         if (response.data) {
-          rhymes = response.data.map(rhyme => rhyme.word);
+          rhymes = response.data.map((rhyme) => rhyme.word);
         }
 
         this.setState({ rhymes });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       })
       .then(() => {
@@ -156,7 +154,7 @@ export default class WordFinder extends Component {
 
   wordChanged(event) {
     this.setState({
-      word: event.target.value
+      word: event.target.value,
     });
   }
 }

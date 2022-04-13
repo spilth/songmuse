@@ -36,7 +36,7 @@ export default class ObjectWriting extends Component {
         </div>
 
         <h2>What is Object Writing?</h2>
-        
+
         <p>Use your senses:</p>
 
         <ul>
